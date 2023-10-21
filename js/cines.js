@@ -3,7 +3,7 @@ const getCines = async() => {
 
         if (response.status === 200) {
             const data = await response.json();
-            
+
             let html = '';
             data.forEach(cine => {
                 html += `
